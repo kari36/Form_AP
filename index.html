@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <h1>Formulario de tareas</h1>
+    <form>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">ID</label>
+        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput2" class="form-label">Título</label>
+        <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput3" class="form-label">Tiempo</label>
+        <input type="number" class="form-control" id="exampleFormControlInput3">
+    </div>
+    <div class="mb-3">
+        <label for="formFile" class="form-label">Imagen</label>
+        <input class="form-control" type="file" id="formFile">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput4" class="form-label">Responsable</label>
+        <input type="name" class="form-control" id="exampleFormControlInput4">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Estado</label>
+    <select class="form-select" aria-label="Estado">
+        <option selected></option>
+        <option value="1">Pendiente</option>
+        <option value="2">En proceso</option>
+        <option value="3">En Testing</option>
+        <option value="4">Completada</option>
+    </select>
+    </div>
+    </form>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 </html>
